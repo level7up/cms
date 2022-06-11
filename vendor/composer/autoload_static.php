@@ -9,12 +9,22 @@ class ComposerStaticInite1defb26603dffbdabddfedbe0fa7854
     public static $prefixLengthsPsr4 = array (
         'L' => 
         array (
-            'Levelup\\Cms\\' => 12,
+            'Level7up\\Cms\\Database\\Seeders\\' => 30,
+            'Level7up\\Cms\\Database\\Factories\\' => 32,
+            'Level7up\\Cms\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Levelup\\Cms\\' => 
+        'Level7up\\Cms\\Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/seeders',
+        ),
+        'Level7up\\Cms\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/factories',
+        ),
+        'Level7up\\Cms\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

@@ -10,15 +10,15 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Level7up\\Cms\\": "src/",
-			"Level7up\\Cms\\Database\\Seeders\\": "database/seeders/",
-			"Level7up\\Cms\\Database\\Factories\\": "database/factories/"
+			"Level7up\\CMS\\": "src/",
+			"Level7up\\CMS\\Database\\Seeders\\": "database/seeders/",
+			"Level7up\\CMS\\Database\\Factories\\": "database/factories/"
 		}
 	},
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Level7up\\Cms\\Providers\\CmsServiceProvider"
+				"Level7up\\CMS\\Providers\\CMSServiceProvider"
 			]
 		}
 	},

@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Levelup\\Cms\\' => array($baseDir . '/src'),
+    'Level7up\\Cms\\Database\\Seeders\\' => array($baseDir . '/database/seeders'),
+    'Level7up\\Cms\\Database\\Factories\\' => array($baseDir . '/database/factories'),
+    'Level7up\\Cms\\' => array($baseDir . '/src'),
 );
