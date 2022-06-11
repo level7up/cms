@@ -1,5 +1,5 @@
 {
-	"name": "levelup/cms",
+	"name": "level7up/cms",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
@@ -13,6 +13,13 @@
 			"Level7up\\Cms\\": "src/",
 			"Level7up\\Cms\\Database\\Seeders\\": "database/seeders/",
 			"Level7up\\Cms\\Database\\Factories\\": "database/factories/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Level7up\\Cms\\Providers\\CmsServiceProvider"
+			]
 		}
 	},
 	"require": {}
