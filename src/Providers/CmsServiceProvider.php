@@ -13,6 +13,7 @@ class CmsServiceProvider extends ServiceProvider
         $this->registerRoutes();
 
         if ($this->app->runningInConsole()) {
+        // dd('cms');
             $this->registerCommands();
         }
 
