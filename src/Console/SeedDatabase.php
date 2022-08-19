@@ -1,5 +1,5 @@
 <?php 
-namespace Level7up\CMS\Console;
+namespace Level7up\Cms\Console;
 
 use Illuminate\Database\Seeder;
 use Symfony\Component\Console\Command\Command;

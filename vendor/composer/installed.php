@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'name' => 'level7up/cms',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '191594c27d461c2beb0ab237bb2a5575f9e2e784',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'levelup/cms',
         'dev' => true,
     ),
     'versions' => array(
-        'levelup/cms' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'level7up/cms' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '191594c27d461c2beb0ab237bb2a5575f9e2e784',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
             'dev_requirement' => false,
         ),
     ),

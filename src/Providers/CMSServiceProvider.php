@@ -2,7 +2,7 @@
 namespace Level7up\Cms\Providers;
 
 use Illuminate\Support\Facades\Route;
-use Level7up\Cms\Console\SeedDatabase;
+// use Level7up\Cms\Console\SeedDatabase;
 use Illuminate\Support\ServiceProvider;
 use Level7up\Dashboard\Facades\SideMenu;
 
@@ -32,9 +32,9 @@ class CMSServiceProvider extends ServiceProvider
     
     private function registerCommands()
     {
-        $this->commands([
-            SeedDatabase::class,
-        ]);
+        // $this->commands([
+        //     SeedDatabase::class,
+        // ]);
     }
 
 
