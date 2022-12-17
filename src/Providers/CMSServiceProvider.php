@@ -16,7 +16,6 @@ class CMSServiceProvider extends ServiceProvider
         $this->registerRoutes();
 
         if ($this->app->runningInConsole()) {
-        // dd('Cms');
             $this->registerCommands();
         }else {
             $this->registerSidebarMenu();
@@ -48,29 +47,20 @@ class CMSServiceProvider extends ServiceProvider
         ], function () {
             $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
         });
-
-        Route::group([
-            'middleware' => ['api'],
-            'prefix' => 'api/v1',
-        ], function () {
-            $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
-        });
     }
     private function registerSidebarMenu()
     {
         SideMenu::add('CMS', 'phosphor-bookmarks', null, 400)
             ->item('cms.Blogs', '/dashboard/blogs', ['create-blogs', 'view-blogs', 'update-blogs', 'delete-blogs'])
-            // ->item('cms.Pages', '/pages', ['create-pages', 'view-pages', 'update-pages', 'delete-pages'])
-            // ->item('cms.Categories', '/categories', ['create-categories', 'view-categories', 'update-categories', 'delete-categories'])
-            // ->item('cms.FAQs', '/faqs', ['create-faqs', 'view-faqs', 'update-faqs', 'delete-faqs'])
+            ->item('cms.Pages', '/pages', ['create-pages', 'view-pages', 'update-pages', 'delete-pages'])
             ;
 
-        // SideMenu::add('CRM', 'phosphor-check-bold', null, 401)
-        //     ->item('crm.Contcat us', '/messages', ['create-contactus', 'view-contactus', 'update-contactus', 'delete-contactus']);
+        SideMenu::add('CRM', 'phosphor-check-bold', null, 401)
+            ->item('crm.Contcat us', '/messages', ['create-contactus', 'view-contactus', 'update-contactus', 'delete-contactus']);
 
-        // if (dashboard_has('teams_enabled')) {
-        //     SideMenu::add('cms.Teams', '/teams', ['create-teams', 'view-teams', 'update-teams', 'delete-teams']);
-        // }
+        if (dashboard_has('teams_enabled')) {
+            SideMenu::add('cms.Teams', '/teams', ['create-teams', 'view-teams', 'update-teams', 'delete-teams']);
+        }
     }
 
 
