@@ -52,7 +52,7 @@ class CMSServiceProvider extends ServiceProvider
     {
         SideMenu::add('CMS', 'phosphor-bookmarks', null, 400)
             ->item('cms.Blogs', '/dashboard/blogs', ['create-blogs', 'view-blogs', 'update-blogs', 'delete-blogs'])
-            ->item('cms.Pages', '/pages', ['create-pages', 'view-pages', 'update-pages', 'delete-pages'])
+            ->item('cms.Pages', '/dashboard/pages', ['create-pages', 'view-pages', 'update-pages', 'delete-pages'])
             ;
 
         SideMenu::add('CRM', 'phosphor-check-bold', null, 401)
