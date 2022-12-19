@@ -26,6 +26,9 @@ Class PagesDataTable extends DataTable
         return array_merge(
             [
                 Column::make('id'),
+                Column::make('slug'),
+                Column::make('title_ar'),
+                Column::make('title_en'),
             ],
             parent::getColumns()
         );
