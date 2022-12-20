@@ -51,12 +51,12 @@ class CMSServiceProvider extends ServiceProvider
     private function registerSidebarMenu()
     {
         SideMenu::add('CMS', 'phosphor-bookmarks', null, 400)
-            ->item('cms.Blogs', '/dashboard/blogs', ['create-blogs', 'view-blogs', 'update-blogs', 'delete-blogs'])
+            // ->item('cms.Blogs', '/dashboard/blogs', ['create-blogs', 'view-blogs', 'update-blogs', 'delete-blogs'])
             ->item('cms.Pages', '/dashboard/pages', ['create-pages', 'view-pages', 'update-pages', 'delete-pages'])
             ;
 
-        SideMenu::add('CRM', 'phosphor-check-bold', null, 401)
-            ->item('crm.Contcat us', '/messages', ['create-contactus', 'view-contactus', 'update-contactus', 'delete-contactus']);
+        // SideMenu::add('CRM', 'phosphor-check-bold', null, 401)
+        //     ->item('crm.Contcat us', '/messages', ['create-contactus', 'view-contactus', 'update-contactus', 'delete-contactus']);
 
         if (dashboard_has('teams_enabled')) {
             SideMenu::add('cms.Teams', '/teams', ['create-teams', 'view-teams', 'update-teams', 'delete-teams']);
